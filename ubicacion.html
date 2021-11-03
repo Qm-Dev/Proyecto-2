@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ubicacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" type="image/png" href="/logoo.png">
+  </head>
+  <style>
+    .navbar-item img {
+      max-height: 100%;
+  }
+      body {
+      font-size: 1.5rem;
+      font-weight: 400;
+      }
+      </style>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/index.html">
+            <img src="/logo.png" width="200" height="60">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/index.html">
+              Inicio
+            </a>
+      
+            <a class="navbar-item" href="/equipo.html">
+              Equipo
+            </a>
+
+            <a class="navbar-item" href="/ubicacion.html">
+                Ubicacion farmacias
+            </a>
+
+            <a class="navbar-item" href="/precios.html">
+                Comparador de precios
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="column">
+        <div class="box">
+          <p class="title is-5">Mapa farmacias comunales/populares:</p>
+        </div>
+      </div>
+      <div class="field has-addons has-addons-centered mr-6 ml-6">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="country">
+                <option value="Cerrillos">Cerrillos</option>
+                <option value="Cerro Navia">Cerro Navia</option>
+                <option value="Conchalí">Conchalí</option>
+                <option value="El Bosque">El Bosque</option>
+                <option value="Estación Central">Estación Central</option>
+                <option value="Huechuraba">Huechuraba</option>
+                <option value="Independencia">Independencia</option>
+                <option value="La Cisterna">La Cisterna</option>
+                <option value="La Florida">La Florida</option>
+                <option value="La Granja">La Granja</option>
+                <option value="La Pintana">La Pintana</option>
+                <option value="La Reina">La Reina</option>
+                <option value="Lo Barnechea">Lo Barnechea</option>
+                <option value="Lo Prado">Lo Prado</option>
+                <option value="Macul">Macul</option>
+                <option value="Maipú">Maipú</option>
+                <option value="Ñuñoa">Ñuñoa</option>
+                <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                <option value="Peñalolén">Peñalolén</option>
+                <option value="Providencia" selected>Providencia</option>
+                <option value="Pudahuel">Pudahuel</option>      
+                <option value="Quilicura">Quilicura</option>
+                <option value="Quinta Normal">Quinta Normal</option>
+                <option value="Recoleta">Recoleta</option>
+                <option value="Renca">Renca</option>
+                <option value="San Joaquín">San Joaquín</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="San Ramón">San Ramón</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Vitacura">Vitacura</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Seleccion</button>
+        </div>
+      </div>
+      <div class="columns m-auto">
+      <div class="column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2380874967052!2d-70.62604738420015!3d-33.44310308077614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c57fbd749743%3A0xebe9cb4135268e98!2sFarmacia%20Comunitaria%20de%20Providencia!5e0!3m2!1ses-419!2scl!4v1635878950274!5m2!1ses-419!2scl" width="100%" height="800" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+    </div>
+    </div>
+  </body>
+</html>
