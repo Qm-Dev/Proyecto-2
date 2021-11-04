@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ubicacion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/R2KzL03/logoo.png">
+  </head>
+  <style>
+    .navbar-item img {
+      max-height: 100%;
+  }
+      body {
+      font-size: 1.5rem;
+      font-weight: 400;
+      }
+      </style>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="https://i.ibb.co/k6MhbCX/logo.png" width="200" height="60">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              Inicio
+            </a>
+      
+            <a class="navbar-item" href="/equipo">
+              Equipo
+            </a>
+
+            <a class="navbar-item" href="/ubicacion">
+                Ubicacion farmacias
+            </a>
+
+            <a class="navbar-item" href="/precios">
+                Comparador de precios
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="column">
+        <div class="box">
+          <p class="title is-5">Mapa farmacias comunales/populares:</p>
+        </div>
+      </div>
+      <form class="form-space">
+      <div class="field has-addons has-addons-centered mr-6 ml-6">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="country">
+                <option value="0">Cerrillos</option>
+                <option value="1">Cerro Navia</option>
+                <option value="2">Conchalí</option>
+                <option value="3">El Bosque</option>
+                <option value="4">Estación Central</option>
+                <option value="5">Huechuraba</option>
+                <option value="6">Independencia</option>
+                <option value="7">La Cisterna</option>
+                <option value="8">La Florida</option>
+                <option value="9">La Granja</option>
+                <option value="10">La Pintana</option>
+                <option value="11">La Reina</option>
+                <option value="12">Lo Barnechea</option>
+                <option value="13">Lo Prado</option>
+                <option value="14">Macul</option>
+                <option value="15">Maipú</option>
+                <option value="16">Ñuñoa</option>
+                <option value="17">Pedro Aguirre Cerda</option>
+                <option value="18">Peñalolén</option>
+                <option value="19">Providencia</option>
+                <option value="20">Pudahuel</option>      
+                <option value="21">Quilicura</option>
+                <option value="22">Quinta Normal</option>
+                <option value="23">Recoleta</option>
+                <option value="24">Renca</option>
+                <option value="25">San Joaquín</option>
+                <option value="26">San Miguel</option>
+                <option value="27">San Ramón</option>
+                <option value="28">Santiago</option>
+                <option value="29">Vitacura</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Seleccion</button>
+        </div>
+      </div>
+      </form>
+      <div class="columns m-auto">
+      <div class="column">
+        <iframe src={{mapcomuna}} width="100%" height="800" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+    </div>
+    </div>
+  </body>
+</html>
